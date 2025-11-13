@@ -1,5 +1,5 @@
 {% set name = "sdds" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sdds-{{ version }}.tar.gz
-  sha256: e16cf40563664726d5c905ec75d60367f887342ea9dabd24658911decd98f755
+  sha256: c5c9b8b82283c7c3fcd7d5416f686a93132a0e3447e527833f829d2b16dc71df
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
